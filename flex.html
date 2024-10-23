@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            display: flex;
+            background: #dacc34;
+            justify-content: center; /*centrer horizontallly all inner content*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 250px;
+        }
+
+        .inner {
+            background: #87b148;
+            width: 90%;
+            padding: 16px;
+        }
+
+        .inner p {
+            color: #070709;
+        }
+
+        #shout {
+            color: red;
+        }
+
+        .container {
+            display: flex;
+            background: #9cb310;
+            justify-content: space-around;
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+        }
+
+        .smaller {
+            width: 23%;
+            height: 120px;
+            background: #070709;
+            color: red;
+            font-size: 2em;
+            display: flex;
+            justify-content: center; /*horixzontal allignment*/
+            align-items: center; /*vertical allignment*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto, dicta earum exercitationem explicabo, illo in laudantium necessitatibus nesciunt non nostrum numquam obcaecati odio, quibusdam quis recusandae sapiente totam?</span><span>Architecto aspernatur corporis delectus eius et facere nemo ratione totam? Assumenda eos ex explicabo fuga fugit molestiae mollitia natus neque non odio quae quasi quibusdam, reiciendis, tenetur unde veritatis voluptatum.</span><span>Assumenda autem cumque deleniti dicta est eum explicabo, impedit in ipsa laboriosam laborum modi nisi numquam officiis pariatur provident quam quasi quis quisquam rem repellat, reprehenderit totam vitae voluptate voluptatum.</span>Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut commodi consequatur corporis
+            deserunt, dignissimos dolor <span id="shout">dolorum id iure magnam optio </span>pariatur quasi quo
+            recusandae repudiandae tempore
+            vel vitae voluptatibus?</p>
+    </div>
+</div>
+<div class="container">
+    <div class="smaller">1</div>
+    <div class="smaller">2</div>
+    <div class="smaller">3</div>
+    <div class="smaller">5</div>
+</div>
+</body>
+</html>
